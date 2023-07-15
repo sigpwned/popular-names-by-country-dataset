@@ -23,7 +23,7 @@ I need a names dataset for doing some software testing, so this was disappointin
 
 ## The Dataset
 
-Since there wasn't one already -- or, at least, not one I could find -- I put together this dataset. It attempts to address the following needs:
+Since there wasn't one already -- or, at least, not one I could find -- [I made one myself](https://xkcd.com/927/). It attempts to address the following needs:
 
 * Free -- This dataset is released under the Creative Commons CC0 license.
 * Popular names -- Included names are reported to be the most popular, by country. Each name includes a count of people with the name within the country when available.
