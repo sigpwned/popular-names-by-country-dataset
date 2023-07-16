@@ -7,7 +7,7 @@ Human names are so ubiquitous and fundamental to our day-to-day lives that it's 
 * In traditional Lithuanian culture, the ending of a woman's surname indicates whether she is married or not. Last names of married women end in -ienė while those of unmarried girls end in -ytė, -iūtė, -utė, -aitė.[^3]
 * Many Portuguese surnames may be preceded by of/from (de, d') or of the/from the (do, da, dos, das) as in de Sousa, da Costa, d'Oliveira. Those elements are not part of the surname and are not considered in an alphabetical order.[^4]
 
-If your program deals with international names and you're not testing aggressively, then your users are probably going to have a bad time.
+If your program deals with international names and you're not testing aggressively, then your users are probably going to have a bad time. This dataset can help.
 
 ## The Need
 
