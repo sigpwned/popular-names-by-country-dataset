@@ -1,4 +1,4 @@
-# Names by Country Dataset
+# Popular Names by Country Dataset
 
 Human names are so ubiquitous and fundamental to our day-to-day lives that it's easy to forget how important -- and complex -- they can be. For example, did you know:
 
@@ -6,6 +6,8 @@ Human names are so ubiquitous and fundamental to our day-to-day lives that it's 
 * The majority of Indonesians do not have family names. Rather, their given names are geographically and culturally specific.[^2]
 * In traditional Lithuanian culture, the ending of a woman's surname indicates whether she is married or not. Last names of married women end in -ienė while those of unmarried girls end in -ytė, -iūtė, -utė, -aitė.[^3]
 * Many Portuguese surnames may be preceded by of/from (de, d') or of the/from the (do, da, dos, das) as in de Sousa, da Costa, d'Oliveira. Those elements are not part of the surname and are not considered in an alphabetical order.[^4]
+
+If your program deals with international names and you're not testing aggressively, then your users are probably going to have a bad time. This dataset can help.
 
 ## The Need
 
@@ -27,7 +29,7 @@ Since there wasn't one already -- or, at least, not one I could find -- [I made 
 
 * Free -- This dataset is released under the Creative Commons CC0 license.
 * Popular names -- Included names are reported to be the most popular, by country. Each name includes a count of people with the name within the country when available.
-* Big Enough for Testing -- 2,370 Forenames and 2,278 Surnames, many with multiple representations.
+* Big Enough for Testing -- 2,370 Forenames and 2,278 Surnames, many with multiple representations, i.e., different spellings and native vs. romanized forms.
 * Multinational -- Forenames from 106 countries, Surnames from 75. Generally at least 10 each per country. In particular, there are many names from CJK and RTL languages available.
 * Clear provenance -- Data is pulled from `https://en.wikipedia.org/wiki/Lists_of_most_common_surnames` and `https://en.wikipedia.org/wiki/List_of_most_popular_given_names` the week of Jul 8, 2023.
 * Easy-to-use -- Data is available in simple JSON formats.
@@ -41,10 +43,28 @@ The following countries are represented:
 
 ## The Data
 
+The dataset is comprised of the following data files:
+
+### Surnames
+
+* `common-surnames-by-country.csv` -- This is the "master" surname file. All other surname files are generated from this file, either directly or indirectly. The format is not documented, but it's not hard to grok, especially if you refer to `surnames2json.py`.
+* `common-surnames-by-country.json` -- The same data as `common-surnames-by-country.csv`, but in a clearer JSON format.
+* `common-surnames-by-country.min.json` -- The same data as `common-surnames-by-country.json`, just minified.
+* `common-surnames.txt` -- Just want the names? Then this is the file for you. Contains all unique surnames, one per line.
+
+### Forenames
+
+* `common-forenames-by-country.csv` -- This is the "master" forename file. All other forename files are generated from this file, either directly or indirectly. The format is not documented, but it's not hard to grok, especially if you refer to `forenames2json.py`.
+* `common-forenames-by-country.json` -- The same data as `common-forenames-by-country.csv`, but in a clearer JSON format.
+* `common-forenames-by-country.min.json` -- The same data as `common-forenames-by-country.json`, just minified.
+* `common-forenames.txt` -- Just want the names? Then this is the file for you. Contains all unique forenames, one per line.
+
+### Downloading
+
 You can get the data a few different ways:
 
 * Download the CSV files from this repo
-* Download the JSON files the releases on this repo
+* Download the CSV, TXT, and JSON files from [the releases on this repo](https://github.com/sigpwned/names-by-country-dataset/releases)
 * Clone this repo and run `make`
 
 ## The License
