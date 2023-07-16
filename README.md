@@ -41,10 +41,28 @@ The following countries are represented:
 
 ## The Data
 
+The dataset is comprised of the following data files:
+
+### Surnames
+
+* `common-surnames-by-country.csv` -- This is the "master" surname file. All other surname files are generated from this file, either directly or indirectly. The format is not documented, but it's not hard to grok, especially if you refer to `surnames2json.py`.
+* `common-surnames-by-country.json` -- The same data as `common-surnames-by-country.csv`, but in a clearer JSON format.
+* `common-surnames-by-country.min.json` -- The same data as `common-surnames-by-country.json`, just minified.
+* `common-surnames.txt` -- Just want the names? Then this is the file for you. Contains all unique surnames, one per line.
+
+### Forenames
+
+* `common-forenames-by-country.csv` -- This is the "master" forename file. All other forename files are generated from this file, either directly or indirectly. The format is not documented, but it's not hard to grok, especially if you refer to `forenames2json.py`.
+* `common-forenames-by-country.json` -- The same data as `common-forenames-by-country.csv`, but in a clearer JSON format.
+* `common-forenames-by-country.min.json` -- The same data as `common-forenames-by-country.json`, just minified.
+* `common-forenames.txt` -- Just want the names? Then this is the file for you. Contains all unique forenames, one per line.
+
+### Downloading
+
 You can get the data a few different ways:
 
 * Download the CSV files from this repo
-* Download the JSON files the releases on this repo
+* Download the CSV, TXT, and JSON files from [the releases on this repo](https://github.com/sigpwned/names-by-country-dataset/releases)
 * Clone this repo and run `make`
 
 ## The License
