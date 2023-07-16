@@ -29,7 +29,7 @@ Since there wasn't one already -- or, at least, not one I could find -- [I made 
 
 * Free -- This dataset is released under the Creative Commons CC0 license.
 * Popular names -- Included names are reported to be the most popular, by country. Each name includes a count of people with the name within the country when available.
-* Big Enough for Testing -- 2,370 Forenames and 2,278 Surnames, many with multiple representations, i.e., native and romanized forms.
+* Big Enough for Testing -- 2,370 Forenames and 2,278 Surnames, many with multiple representations, i.e., different spellings and native vs. romanized forms.
 * Multinational -- Forenames from 106 countries, Surnames from 75. Generally at least 10 each per country. In particular, there are many names from CJK and RTL languages available.
 * Clear provenance -- Data is pulled from `https://en.wikipedia.org/wiki/Lists_of_most_common_surnames` and `https://en.wikipedia.org/wiki/List_of_most_popular_given_names` the week of Jul 8, 2023.
 * Easy-to-use -- Data is available in simple JSON formats.
